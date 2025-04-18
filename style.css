@@ -134,6 +134,11 @@ a {
   height: auto;
 }
 
+#img_half_thumbnail {
+  width: 25vw;
+  height: auto;
+}
+
 .description {
   padding: 10px;
   font-family: Georgia, serif;
