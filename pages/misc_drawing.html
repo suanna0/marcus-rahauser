@@ -27,17 +27,15 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/scm7lei.css" />
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script src="../script.js" defer></script>
   </head>
   <body>
-    <div class="mobile-warning">
-      <p>This site is not ready for mobile viewing. Please use a desktop.</p>
-    </div>
-    
     <div class="wrapper">
       <div class="content" role="main">
-        <div class="navigation">
+        <button class="hamburger" id="hamburger">&#9776;</button> 
+
+        <div class="navigation" id="nav_menu">
           <h1 class="title"><a href="../">Marcus Rahauser</a></h1>
           <button><a href="/pages/debate_class.html">Debate Class</a></button>
           <br />
@@ -83,6 +81,9 @@
         </div>
 
         <div class="body">
+          <h1 class="title" id = "mobile_title">
+            <a href="../">Marcus Rahauser</a>
+          </h1>
           <div class="list_elem">
             <img
               id="img_half_thumbnail"

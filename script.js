@@ -1,3 +1,17 @@
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav_menu"); 
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  
+  // Change icon
+  if (navMenu.classList.contains("open")) {
+    hamburger.innerHTML = "&times;"; // ✕
+  } else {
+    hamburger.innerHTML = "&#9776;"; // ☰
+  }
+});
+
 document.addEventListener("mousemove", (event) => {
   const cursorImage = document.getElementById("cursor-image");
   cursorImage.style.left = `${event.pageX}px`;
