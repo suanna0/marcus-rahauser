@@ -12,6 +12,10 @@
   display: none !important;
 }
 
+#mobile_title{
+  display: none;
+}
+
 body {
   margin-left: 25vw;
   background-color: var(--color-bg);
@@ -231,12 +235,8 @@ a {
   cursor: pointer;
 }
 
-.mobile_title{
-  display: none;
-}
-
 @media (max-width: 768px) {
-  .mobile_title{
+  #mobile_title{
     display: block;
   }
 
