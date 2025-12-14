@@ -1,46 +1,26 @@
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav_menu"); 
+const navMenu = document.getElementById("nav_menu");
 
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-  
-  // Change icon
-  if (navMenu.classList.contains("open")) {
-    hamburger.innerHTML = "&times;"; // ✕
-  } else {
-    hamburger.innerHTML = "&#9776;"; // ☰
-  }
+navMenu.classList.toggle("open");
+hamburger.innerHTML = navMenu.classList.contains("open")
+  ? "&times;"
+  : "&#9776;";
 });
 
-document.addEventListener("mousemove", (event) => {
-  const cursorImage = document.getElementById("cursor-image");
-  cursorImage.style.left = `${event.pageX}px`;
-  cursorImage.style.top = `${event.pageY}px`;
-  updateCaption();
-});
+document.querySelectorAll(".carousel-container").forEach((container) => {
+const carousel = container.querySelector(".carousel");
+const images = carousel.querySelectorAll("img");
 
-// Carousel functionality
-const carousel = document.querySelector(".carousel");
-const images = document.querySelectorAll(".carousel img");
-const captionContainer = document.getElementById("carousel-caption");
-const titleContainer = document.getElementById("carousel-title");
-const prev = document.querySelector(".nav.prev");
-const next = document.querySelector(".nav.next");
+const navContain = container.nextElementSibling;
+const prev = navContain.querySelector(".nav.prev");
+const next = navContain.querySelector(".nav.next");
 
 let index = 0;
 
 function showImage(idx) {
   const imageWidth = images[0].clientWidth;
   carousel.style.transform = `translateX(${-idx * imageWidth}px)`;
-  updateCaption();
-}
-
-function updateCaption() {
-  const currentImage = images[index];
-  const titleText = currentImage.getAttribute("title");
-  const captionText = currentImage.getAttribute("caption");
-  titleContainer.textContent = titleText;
-  captionContainer.textContent = captionText;
 }
 
 prev.addEventListener("click", () => {
@@ -53,5 +33,5 @@ next.addEventListener("click", () => {
   showImage(index);
 });
 
-// Adjust carousel on window resize
 window.addEventListener("resize", () => showImage(index));
+});
