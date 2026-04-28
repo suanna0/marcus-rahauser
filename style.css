@@ -19,7 +19,7 @@
 body {
   margin-left: 25vw;
   background-color: var(--color-bg);
-  margin-top: 0;
+  margin-top: 100px;
 }
 
 .ocean-display {
