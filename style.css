@@ -67,10 +67,6 @@ ol {
 
 .content {
   background-color: var(--color-bg);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  justify-content: left;
-  padding: 0px 0px;
 }
 
 button {
@@ -100,6 +96,12 @@ a {
   width: 25vw;
   z-index: 1000;
   justify-content: left;
+  transition: min-height 0.5s ease;
+}
+
+.navigation.expanding {
+  min-height: 100vh;
+  background-color: var(--color-bg);
 }
 
 .navigation .title {
