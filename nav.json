@@ -1,6 +1,6 @@
 [
   {
-    "name": "Debate Class",
+    "name": "Debate Class/Mesa Day Four",
     "href": "/pages/debate_class.html",
     "desc": "Four person facetime transcription examining the ideas of appropriation in text by using the argument as a ready-made writing piece."
   },
@@ -12,7 +12,12 @@
   {
     "name": "Lunch Money",
     "href": "/pages/lunch_money.html",
-    "desc": "Found image and text examining my obsession with Cartier's Tank Américaine Watch. Three books act through transliteration in connecting cultural and historical events with conversation on how image and text are created, shared, valued, and understood."
+    "desc": "An unsatisfying answer to things not being satisfying. <br><br>Found image and text examining my obsession with Cartier's Tank Américaine Watch. Three books act through transliteration in connecting cultural and historical events with conversation on how image and text are created, shared, valued, and understood."
+  },
+  {
+    "name": "Golf With [Your] Buddies",
+    "href": "/pages/wip.html",
+    "desc": ""
   },
   {
     "name": "Root Beer",
@@ -20,18 +25,24 @@
     "desc": "A collection of mementos gathered over a four-year period of a romantic relationship. 126 objects have been scanned and indexed.<br><br>For Emma<br><br>Cover design by Tilde Oyster"
   },
   {
-    "name": "Painting",
-    "href": "/pages/painting.html",
-    "desc": ""
-  },
-  {
     "name": "Ocean in a Bottle",
     "href": "/pages/ocean.html",
-    "desc": "Diptychs documented between Pittsburgh, PA and Longneck, DE."
+    "desc": "Diptychs documented between Pittsburgh, PA and Longneck, DE.",
+    "spacer": true
+  },
+  {
+    "name": "Commissions/Digital Archive",
+    "href": "/pages/wip.html",
+    "desc": ""
   },
   {
     "name": "Film Archive",
     "href": "/pages/film.html",
+    "desc": ""
+  },
+  {
+    "name": "Drawing/Painting",
+    "href": "/pages/painting.html",
     "desc": ""
   },
   {

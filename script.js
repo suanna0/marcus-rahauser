@@ -22,6 +22,10 @@ function buildNav(navItems) {
       navMenu.appendChild(desc);
     }
 
+    if (item.spacer) {
+      navMenu.appendChild(document.createElement("br"));
+    }
+
     if (item.name === "♫") {
       navMenu.appendChild(document.createElement("br"));
     }
