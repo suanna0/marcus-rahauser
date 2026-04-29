@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
   --color-bg: #ffffff;
   --color-text-main: #212121;
@@ -36,28 +38,28 @@ body {
 }
 
 p {
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
-  line-height: 16pt;
+  line-height: 18pt;
   margin-top: 0;
 }
 
 b {
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-weight: 500;
   font-style: normal;
   font-size: 14px;
-  line-height: 16pt;
+  line-height: 18pt;
 }
 
 ol {
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
-  line-height: 16pt;
+  line-height: 18pt;
 }
 
 
@@ -72,7 +74,7 @@ ol {
 
 button {
   color: #cccccc;
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-variation-settings: "wght" 300;
   cursor: pointer; /* Change cursor to pointer on hover */
   background-color: white;
@@ -98,11 +100,7 @@ a {
   z-index: 1000;
   justify-content: left;
   transition: min-height 0.5s ease;
-}
-
-.navigation.expanding {
-  min-height: 100vh;
-  background-color: var(--color-bg);
+  line-height: 18pt;
 }
 
 .navigation .title {
@@ -124,10 +122,10 @@ a {
 
 .title {
   color: var(--color-text-header);
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 36px;
+  font-size: 24px;
   margin: 0;
   padding: 10px 0px 30px 0px;
   line-height: 38px;
@@ -146,10 +144,10 @@ a {
 
 .description {
   padding: 10px;
-  font-family: Georgia, serif;
+  font-family: 'Libre Caslon Text', Georgia, serif;
   font-variation-settings: "wght" 300;
   font-size: 14px;
-  line-height: 15pt;
+  line-height: 18pt;
 }
 
 .carousel-container {
