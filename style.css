@@ -22,18 +22,6 @@ body {
   margin-top: 100px;
 }
 
-.ocean-display {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px; /* Adds 10px spacing between columns */
-  padding: 50px 50px;
-}
-
-.ocean-display img {
-  width: 30vw;
-  height: auto;
-}
-
 .two-col-display {
   display: grid;
   grid-template-columns: 1fr 1fr;
