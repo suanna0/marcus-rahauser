@@ -5,6 +5,7 @@
   --color-text-main: #212121;
   --color-text-header: #212121;
   --wrapper-height: 87vh;
+  --top-offset: 60px;
 }
 
 * {
@@ -21,7 +22,7 @@
 body {
   margin-left: 25vw;
   background-color: var(--color-bg);
-  margin-top: 100px;
+  margin-top: var(--top-offset);
   padding: 0 20px 20px 20px;
 }
 
@@ -96,7 +97,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 100px 0px 0px 20px;
+  padding: var(--top-offset) 0px 0px 20px;
   width: 25vw;
   z-index: 1000;
   justify-content: left;
@@ -128,8 +129,7 @@ a {
   font-style: normal;
   font-size: 24px;
   margin: 0;
-  padding: 10px 0px 30px 0px;
-  line-height: 38px;
+  line-height: 1em;
 }
 
 
@@ -171,9 +171,25 @@ a {
   cursor: pointer;
 }
 
+.carousel-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
 .nav_contain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(9.375vw - 25px);
+  right: calc(9.375vw - 25px);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.nav.prev,
+.nav.next {
+  pointer-events: all;
 }
 
 .nav.prev {
@@ -182,7 +198,6 @@ a {
 
 .nav.next {
   text-align: right;
-  padding-bottom: 40px;
 }
 
 .grid_cols {
@@ -268,7 +283,7 @@ a {
 
   .navigation.open {
     max-height: 1000px;
-    padding: 100px 15px 15px 15px;
+    padding: var(--top-offset) 15px 15px 15px;
   }
 
   .content {
@@ -279,6 +294,10 @@ a {
   #img_thumbnail, #img_half_thumbnail {
     width: 100%;
     height: auto;
+  }
+
+  .carousel-wrapper {
+    padding: 0 10%;
   }
 
   .carousel-container {
