@@ -137,6 +137,8 @@ a {
 #img_thumbnail {
   width: 50vw;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #img_half_thumbnail {
@@ -303,6 +305,10 @@ a {
 
   .carousel-container {
     width: 100%;
+  }
+
+  .mesa-iframe {
+    width: 400px;
   }
 
   .carousel img {
