@@ -43,72 +43,15 @@
           <h1 class="title" id = "mobile_title">
             <a href="../">Marcus Rahauser</a>
           </h1>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/1.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/2.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/3.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/4.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/5.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/6.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/7.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/8.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/9.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/10.jpg"
-            />
-          </div>
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/11.jpg"
-            />
-          </div>
+          <script>
+            for (let i = 1; i <= 13; i++) {
+              document.write(`
+                <div class="list_elem">
+                  <img id="img_thumbnail" src="https://d3ooqq7pgkip0k.cloudfront.net/images/commissions/${i}.jpg" />
+                </div>
+              `);
+            }
+          </script>
         </div>
       </div>
     </div>

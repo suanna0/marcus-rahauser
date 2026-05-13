@@ -43,61 +43,15 @@
           <h1 class="title" id = "mobile_title">
             <a href="../">Marcus Rahauser</a>
           </h1>
-           <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/1.jpg"
-            />
-          </div>
-          
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/2.jpg"
-            />
-          </div>
-
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/3.jpg"
-            />
-          </div>
-
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/4.jpg"
-            />
-          </div>
-
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/5.jpg"
-            />
-          </div>
-
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/6.jpg"
-            />
-          </div>
-          
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/7.jpg"
-            />
-          </div>
-
-          <div class="list_elem">
-            <img
-              id="img_thumbnail"
-              src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/8.jpg"
-            />
-          </div>
+          <script>
+            for (let i = 1; i <= 15; i++) {
+              document.write(`
+                <div class="list_elem">
+                  <img id="img_thumbnail" src="https://d3ooqq7pgkip0k.cloudfront.net/images/paintings/${i}.jpg" />
+                </div>
+              `);
+            }
+          </script>
         </div>
       </div>
     </div>
